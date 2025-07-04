@@ -8,7 +8,7 @@ module reg(
     input wire wr, rd
 ); 
 
-reg [`MEM_W-1:0] reg [15:0];
+reg [`MEM_W-1 : 0] reg [`REG_W-1 : 0];
 
 always @(posedge clk)begin
     if (rst) begin
