@@ -11,8 +11,7 @@ module ALU (
       3'b001: result = a - b; // SUB
       3'b010: result = a & b; // AND
       3'b011: result = a | b; // OR
-      3'b100: result = a << b; // Shift left
-      3'b101: result = a >> b; // Shift right
+      
       default: result = 8'b00000000; // Default case
     endcase
 
